@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
+    <title>E-Commerce - CaC fullStack 22030 - Grupo 11</title>
     <!-- Bootstrap 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css"/>
@@ -87,7 +87,7 @@
             </div>
           </div>
           <!-- Carousel Nuevos Productos -->
-          <div class="col-sm-8 bg-dark">
+          <div class="col-sm-8 bg-info">
             <div id="carouselNuevosProductos" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselNuevosProductos" data-slide-to="0" class="active"></li>
@@ -125,15 +125,39 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </button>
+            </div>
           </div>
         </div>
-        <!-- FIN CAROUSEL -->
-        <!-- Prueba Commit JMVDW -->
+      <!-- FIN CAROUSEL -->
+      <!-- Inicio Métodos de Pago -->
+        <section> <!-- La idea es que cada tarjeta ocupe un espacio tipo "Around", y que al posar el cursos aparezca un Popover con algo más de info. -->
+          <div class="bg-success p-1 d-flex justify-content-around">
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="American Express®" data-content="Hasta 12 cuotas sin interés.">
+              <img src="./img/Credit_Card_Icons/PNG/american-express@2x.png" class="" alt="American Express®"/>
+            </button>
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="MasterCard®" data-content="Hasta 12 cuotas sin interés.">
+              <img src="./img/Credit_Card_Icons/PNG/mastercard@2x.png" alt="MasterCard®"/>
+            </button>
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="PayPal" data-content="Hasta 12 cuotas sin interés.">
+              <img src="./img/Credit_Card_Icons/PNG/paypal@2x.png" alt="PayPal"/>
+            </button>
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="Visa®" data-content="Hasta 12 cuotas sin interés.">
+              <img src="./img/Credit_Card_Icons/PNG/visa-2@2x.png" alt="Visa®"/>
+            </button>
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="CryptoCurrency" data-content="BTC, ETH, USDT.">
+              <img src="./img/Credit_Card_Icons/PNG/CryptoCurrency.png" alt="CryptoCurrency" height="50px"/>
+            </button>
+            <button type="button" class="btn btn-sm bg-success" data-toggle="popover" data-placement="bottom" title="Transferencia Bancaria" data-content="Tanto transferencia cómo efectivo 10% OFF.">
+              <img src="./img/Credit_Card_Icons/PNG/transferenciaBancaria.png" alt="TransferenciaBancaria" height="50px"/>
+            </button>
+          </div>
+        </section>
+      <!-- FIN Métodos de Pago -->
     </main>
     <!--  -->
     <footer>
         <div class="bg-dark p-4">
-          <h5 class="text-white h4">N. E. T.</h5>
+          <h5 class="text-white h4">"Nombre de tu Comercio"</h5>
           <span class="text-muted">&copy 2022 - CaC #22030 - FullStack Java - Profersor: Cristian Gadea.</span>
         </div>
         </footer>   
