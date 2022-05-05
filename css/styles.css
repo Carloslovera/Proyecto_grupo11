@@ -34,3 +34,35 @@ footer{
     height: 340px;
     overflow: hidden;
 }
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    
+}
+
+nav li a:hover {
+    background-color:#434343;
+    
+}
+
+nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+
+}
+
+li a.active, li a:hover{
+    transition: .5s;
+}
