@@ -69,140 +69,136 @@
   <!-- FIN HEADER -->
 
   <!-- Comienzo MAIN -->
-  <main>
-    <h1>Sección de registro de Usuario Nuevo.</h1>
-        <p>A continuación te solicitamos los siguientes datos para poder crear tu usuario.</p>
-        <p>* los datos marcados con asterisco son Obligatorios!</p>
-        <div class="bd-example"><!-- DIV para centar todo el contenido, no sé si se hace así. -->
-            <form class="needs-validation mx-5" novalidate>
-                <div class="form-row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationCustom01">Primer Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Ej: Cristian" required>
-                    <div class="valid-feedback">
-                    Correcto!
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationCustom02">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: Gadea" required>
-                    <div class="valid-feedback">
-                        Correcto!
-                    </div>
-                </div>
-                </div>
-                <div class="form-row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationCustom03">Localidad</label>
-                    <input type="text" class="form-control" id="validationCustom03" placeholder="Ej: Villa Santa Rita" required>
-                    <div class="invalid-feedback">
-                    Favor de indicar un Barrio válido.
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationCustom04">Ciudad</label>
-                    <select class="custom-select" id="validationCustom04" required>
-                    <option selected disabled value="">Seleccionar...</option>
-                    <option>Gran Buenos Aires</option>
-                    <option>C.A.B.A.</option>
-                    <option>Córdoba</option>
-                    <option>Santa Fé</option>
-                    <option>Mendoza</option>
-                    <option>Chaco</option>
-                    <option>Formosa</option>
-                    <option>Salta</option>
-                    <option disabled value="">Muchos más por venir...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                    Favor de seleccionar una Ciudad válida.
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationCustom05">Código Postal</label>
-                    <input type="text" class="form-control" id="validationCustom05" placeholder="Ej: 1414" required>
-                    <div class="invalid-feedback">
-                    Favor de indicar Código Postal válido.
-                    </div>
-                </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="telefono">#Teléfono:</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="Ej: +54 11 1234-5678" required>
-                        <div class="valid-feedback">
-                        Correcto!
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3"> <!-- Inicio Email -->
-                        <label for="email">E-m@il</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ej: Cris.Gadea@gadeacorps.ar" required>
-                        <div class="valid-feedback">
-                            Correcto!
-                        </div>
-                    </div> <!-- Fin Email -->
-                </div> 
-                <!-- PASSWORD -->
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                    <label for="inputPassword6">Password</label>
-                    <input type="password" id="inputPassword6" class="form-control" placeholder="Nunca le digas a nadie tu contraseña!" aria-describedby="passwordHelpInline" required>
-                    <div class="invalid-feedback">
-                        Debes especificar una contraseña!
-                    </div>
-                    <small id="passwordHelpInline" class="text-muted">
-                        Entre 8 a 12 carácteres, todos los símbolos aceptados!
-                    </small>
-                    </div>
-                <!-- FIN PASS -->
-                <!-- PASSWORD -->
-                    <div class="col-md-6 mb-3">
-                    <label for="inputPassword6">Reingrese su Password</label>
-                    <input type="password" id="inputPassword6" class="form-control" placeholder="Confirme su contraseña!" aria-describedby="passwordHelpInline" required>
-                    <div class="invalid-feedback">
-                        Las contraseñas deben coincidir!
-                    </div>
-                    <small id="passwordHelpInline" class="text-muted">
-                        Vuelva a escribir su contraseña.
-                    </small>
-                    </div>
-                </div>
-                <!-- FIN PASS -->
-
-                <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                    Tilde la casilla para aceptar nuestros <span class="font-weight-bold"><a href="./index.html">Términos y Condiciones</a></span>. <!-- No sé si conviene con un span, o directo al link ponerle la clase bold -->
-                    </label>
-                    <div class="invalid-feedback">
-                    Para continuar, deberás aceptar nuestros Términos y Condiciones. Gracias!
-                    </div>
-                </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Aceptar</button>
-            </form>
-        </div><!-- FIN DIV para centar todo el contenido, no sé si se hace así. -->
+  <main class="bg-info">
+    <div class="text-center">
+      <h1 class="text-weight-bold">Sección de registro de Usuario Nuevo.</h1>
+      <p>A continuación te solicitamos los siguientes datos para poder crear tu usuario.</p>
+      <p class="text-warning font-weight-bold">* los datos marcados con asterisco son Obligatorios!</p>
+    </div>
+    <form class="needs-validation mx-5" novalidate>
+      <div class="form-row"><!-- INICIO Nombre y Apellido -->
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">Nombre <span class="text-warning font-weight-bold">*</span></label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Ej: Cristian" required>
+          <div class="valid-feedback">
+            Correcto!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom02">Apellido <span class="text-warning font-weight-bold">*</span></label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: Gadea" required>
+          <div class="valid-feedback">
+            Correcto!
+          </div>
+        </div>
+      </div> <!-- FIN Nombre y Apellido -->
+      <div class="form-row"><!-- INICIO Localidad y Ciudad -->
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Localidad</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="Ej: Villa Santa Rita" required>
+          <div class="invalid-feedback">
+            Favor de indicar un Barrio válido.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">Ciudad</label>
+          <select class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="">Seleccionar...</option>
+            <option>Gran Buenos Aires</option>
+            <option>C.A.B.A.</option>
+            <option>Córdoba</option>
+            <option>Santa Fé</option>
+            <option>Mendoza</option>
+            <option>Chaco</option>
+            <option>Formosa</option>
+            <option>Salta</option>
+            <option disabled value="">Muchos más por venir...</option>
+          </select>
+          <div class="invalid-feedback">
+            Favor de seleccionar una Ciudad válida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Código Postal</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Ej: 1414" required>
+          <div class="invalid-feedback">
+            Favor de indicar Código Postal válido.
+          </div>
+        </div>
+      </div><!-- FIN Localidad y Ciudad -->
+      <div class="form-row"> <!-- INCIO Tel y Email -->
+        <div class="col-md-6 mb-3">
+          <label for="telefono">#Teléfono:</label>
+          <input type="text" class="form-control" id="telefono" placeholder="Ej: +54 11 1234-5678" required>
+          <div class="valid-feedback">
+            Correcto!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3"> 
+          <label for="email">E-m@il <span class="text-warning font-weight-bold">*</span></label>
+          <input type="text" class="form-control" id="email" placeholder="Ej: Cris.Gadea@gadeacorps.ar" required>
+          <div class="valid-feedback">
+            Correcto!
+          </div>
+        </div> 
+      </div> <!-- FIN Tel y Email -->
+      <div class="form-row"> <!-- INICIO Password -->
+        <div class="col-md-6 mb-3">
+          <label for="inputPassword6">Password <span class="text-warning font-weight-bold">*</span></label>
+          <input type="password" id="inputPassword6" class="form-control" placeholder="Nunca le digas a nadie tu contraseña!" aria-describedby="passwordHelpInline" required>
+          <div class="invalid-feedback">
+            Debes especificar una contraseña!
+          </div>
+          <small id="passwordHelpInline" class="font-italic">
+            Entre 8 a 12 carácteres, todos los símbolos aceptados!
+          </small>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="inputPassword6" >Reingrese su Password <span class="text-warning font-weight-bold">*</span></label>
+          <input type="password" id="inputPassword6" class="form-control" placeholder="Confirme su contraseña!" aria-describedby="passwordHelpInline" required>
+          <div class="invalid-feedback">
+            Las contraseñas deben coincidir!
+          </div>
+          <small id="passwordHelpInline" class="font-italic">
+            Vuelva a escribir su contraseña.
+          </small>
+        </div>
+      </div><!-- FIN Password -->
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Tilde la casilla para aceptar nuestros <span class="font-weight-bold"><a href="#">Términos y Condiciones</a></span>. <!-- No sé si conviene con un span, o directo al link ponerle la clase bold -->
+          </label>
+          <div class="invalid-feedback">
+            Para continuar, deberás aceptar nuestros Términos y Condiciones. Gracias!
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Aceptar</button>
+    </form>
+    <br/><br/><br/>
           
-          <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-          (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-              // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName('needs-validation');
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
-                }, false);
-              });
-            }, false);
-          })();
-          </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
   </main>
   <!-- FIN MAIN -->
 
