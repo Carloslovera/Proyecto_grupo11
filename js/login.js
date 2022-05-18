@@ -22,7 +22,7 @@
             localStorage.setItem('email', email.value);
           }
 
-          if(email.value == 'sotopu@gmail.com' && password.value == 'puto123'){
+          if(email.value == 'cristiangadea@gmail.com' && password.value == 'cac22030'){
             localStorage.setItem('usuario', email.value);
             window.location = './perfil.html';
           }
