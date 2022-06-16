@@ -51,7 +51,7 @@
                     <a class="nav-link" href="./carrito.html">Carrito</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./login.html">Perfil</a>
+                    <a class="nav-link" href="./login.html">Login</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -68,37 +68,39 @@
 
     <!-- Comienzo MAIN -->
     <main class="bg-info">
-        <div class="d-flex justify-content-center m-5">
-            <form class="text-center w-50 needs-validation" novalidate>
-                <div class="form-group">
-                <label for="emailUsuario" class="font-weight-bold">E-mail ó Nombre de Usuario</label>
-                <input type="email" class="form-control" id="emailUsuario" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text">¡No informes tu e-mail de registro a nadie!</small>
-                </div>
-                <div class="form-group">
-                <label for="contraseñaUsuario" class="font-weight-bold">Contraseña</label>
-                <input type="password" class="form-control" id="contraseñaUsuario" aria-describedby="passHelp">
-                <small id="passHelp" class="form-text">¡No compartas tu contraseña con nadie! Nosotros nunca te la pediremos.</small>
+        <div class="d-flex justify-content-center m-5">     <!-- Contenedor -->
+
+
+            <form id="formulario" class="text-center w-50"> <!-- Formulario Inicio Sesión -->
+                <div class="form-group">                    <!-- Usuario y Contraseña -->
+                    <label for="emailUsuario" class="font-weight-bold">E-mail ó Nombre de Usuario</label>
+                    <input type="email" class="form-control" id="emailUsuario" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text">¡No informes tu e-mail de registro a nadie!</small>
+                    <br>
+                    <label for="contraseñaUsuario" class="font-weight-bold">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseñaUsuario" aria-describedby="passHelp">
+                    <small id="passHelp" class="form-text">¡No compartas tu contraseña con nadie! Nosotros nunca te la pediremos.</small>
                 </div>
                 <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="recuerdameCheck">
-                <label class="form-check-label font-weight-bold" for="recuerdameCheck">Recuerdame</label>
+                    <input type="checkbox" class="form-check-input" id="recuerdameCheck">
+                    <label class="form-check-label font-weight-bold" for="recuerdameCheck">Recuerdame</label>
                 </div>
-                <a href="./register.html" class="text-reset">Registrese</a>
-                <button type="submit" class="btn btn-primary">Iniciar</button>
+                <a href="./register.html" class="text-reset">Regístrese.</a>
+                <button type="submit" class="btn btn-primary" >Iniciar</button> <!-- onclick="validarForm()" -->
             </form>
+
+
         </div>
     </main>
   <!-- FIN MAIN -->
 
   <!-- Comienzo FOOTER -->
   <footer>
-    <div class="bg-dark p-4">
+    <div class="bg-dark p-2">
       <h5 class="text-white h4 d-inline">FullStack Deportes</h5> <p class="d-inline muted">Una empresa familiar, desde el 2022 brindando el mejor servicio.</p>
-      <br/><br/>
       <p class="text-muted">&copy 2022 - CaC #22030 - FullStack Java - Profersor: Cristian Gadea.</p>
     </div>
-  </footer>
+  </footer> 
   <!-- FIN FOOTER -->
 
 
@@ -106,5 +108,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>  
   <script src="./js/login.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- https://sweetalert.js.org/guides/ -->
 </body>
 </html>
