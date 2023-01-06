@@ -35,12 +35,18 @@ footer div p{
 .containerCarousel{
     display: flex;
     flex-flow: row nowrap;
+    
     width: 100%;
+    
+    
 }
 
 .carousel{
-    height: 340px;
+    
+    height: 350px;
     overflow: hidden;
+    justify-content: center;
+    
 }
 
 nav ul li a{
